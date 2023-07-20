@@ -4,8 +4,8 @@
     "keywords": [ "propel", "behavior", "event dispatcher", "event" ],
     "license": "MIT",
     "require": {
-        "symfony/event-dispatcher": "~2.1|~3.0|~3.4|~4.4",
-        "propel/propel1": "~1.6"
+        "symfony/event-dispatcher": "~2.1|~3.0|~3.4|^4.4|^5.4",
+        "propel/propel1": "^1.8"
     },
     "authors": [
         {
