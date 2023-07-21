@@ -1,14 +1,13 @@
 <?php
 
-use Symfony\Component\EventDispatcher\Event;
 use My\Post;
 
 /**
  * @author William Durand <william.durand1@gmail.com>
  */
-class EventDispatcherBehaviorWithNamespacesTest extends \PHPUnit_Framework_TestCase
+class EventDispatcherBehaviorWithNamespacesTest extends PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         if (!class_exists('My\Post')) {
             $schema = <<<EOF
@@ -61,7 +60,7 @@ EOF;
         $postSaveFired = false;
 
         $that = $this;
-        Post::getEventDispatcher()->addListener(Post::EVENT_PRE_SAVE, function (Event $event) use (& $preSaveFired, $that) {
+        Post::getEventDispatcher()->addListener(Post::EVENT_PRE_SAVE, function (object $event) use (& $preSaveFired, $that) {
             $preSaveFired = true;
 
             $that->assertInstanceOf('Symfony\Component\EventDispatcher\GenericEvent', $event);
@@ -69,7 +68,7 @@ EOF;
             $that->assertInstanceOf('PropelPDO', $event->getArgument('connection'));
         });
 
-        Post::getEventDispatcher()->addListener(Post::EVENT_POST_SAVE, function (Event $event) use (& $postSaveFired, $that) {
+        Post::getEventDispatcher()->addListener(Post::EVENT_POST_SAVE, function (object $event) use (& $postSaveFired, $that) {
             $postSaveFired = true;
 
             $that->assertInstanceOf('Symfony\Component\EventDispatcher\GenericEvent', $event);
