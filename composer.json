@@ -1,5 +1,5 @@
 {
-    "name": "willdurand/propel-eventdispatcher-behavior",
+    "name": "dayspring-tech/propel-eventdispatcher-behavior",
     "description": "Integrates the Symfony2 EventDispatcher component in your Model classes. ",
     "keywords": [ "propel", "behavior", "event dispatcher", "event" ],
     "license": "MIT",
@@ -14,6 +14,14 @@
         {
             "name": "William DURAND",
             "email": "william.durand1@gmail.com"
+        },
+        {
+            "name": "Jeffrey Wong",
+            "email": "jwong@dayspringpartners.com"
+        },
+        {
+            "name": "Stan Situ",
+            "email": "ssitu@dayspringpartners.com"
         }
     ],
     "autoload": {
