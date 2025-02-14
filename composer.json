@@ -23,5 +23,8 @@
     ],
     "autoload": {
         "classmap": ["src/"]
+    },
+    "replace": {
+        "willdurand/propel-eventdispatcher-behavior": "<1.3.1"
     }
 }
