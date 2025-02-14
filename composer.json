@@ -32,5 +32,8 @@
             "Composer\\Config::disableProcessTimeout",
             "vendor/bin/phpunit -c ./phpunit.xml.dist"
         ]
+    },
+    "replace": {
+        "willdurand/propel-eventdispatcher-behavior": "<1.3.1"
     }
 }
