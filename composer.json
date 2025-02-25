@@ -6,7 +6,7 @@
     "require": {
         "php": ">=8.2",
         "symfony/event-dispatcher": "^5.4|^6.0",
-        "dayspring-tech/propel1": "^1.8"
+        "dayspring-tech/propel1": "^1.8|^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.5.33|^9.0"
