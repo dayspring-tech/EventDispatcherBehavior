@@ -4,8 +4,9 @@
     "keywords": [ "propel", "behavior", "event dispatcher", "event" ],
     "license": "MIT",
     "require": {
-        "symfony/event-dispatcher": "^4.3|^5.0",
-        "dayspring-tech/propel1": "^1.8"
+        "php": ">=8.2",
+        "symfony/event-dispatcher": "^5.4|^6.0",
+        "dayspring-tech/propel1": "^1.8|^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~8.5.33|^9.0"
